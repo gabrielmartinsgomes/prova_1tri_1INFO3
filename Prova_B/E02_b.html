@@ -7,11 +7,14 @@
     */
 
     //ENTRADA
-
+    const valorInvest = Number(prompt ("Informe uma quantia de dinheiro a ser investida").replace(",", "."));
 
     //PROCESSAMENTO
+    const porcentagem = valorInvest* (9.8/100);
+    const rendimento = (valorInvest+ porcentagem);
 
 
     //SAÍDA
+    alert(`Você terá um retorno de R$${rendimento.toFixed(2).replace(".", ",")}`)
 
 </script>

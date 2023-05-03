@@ -8,11 +8,20 @@
     */
 
     //ENTRADA
+    const distancia = Number( prompt("Informe a distância de uma viagem").replace(",", "."));
 
 
     //PROCESSAMENTO
+    const gasosa = Math.ceil (distancia /14);
+    const custoGasosa = Math.ceil (gasosa*5.29);
+    const pedagio = Math.round (distancia/50);
+    const precoPedagio = (pedagio * 4.90); 
 
 
     //SAÍDA
+    alert(`Voce precisara de ${gasosa.toFixed(1)}L para realizar a viagem.
+     E o custo da gasolina será de R$ ${custoGasosa.toFixed(2).replace(".", ",")}.`)
+     alert(`Voce encontrara ${pedagio} pedagio(s) no caminho.
+     Isso te custará R$ ${precoPedagio.toFixed(2).replace(".", ",")} adicionais `)
 
 </script>

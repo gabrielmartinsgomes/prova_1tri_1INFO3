@@ -7,11 +7,17 @@
     */
 
     //ENTRADA
+    const mercadoUm = Number (prompt("Informe o preço da carne bovina no primeiro supermercado").replace(",", "."))
+    const mercadoDois = Number (prompt("Informe o preço da carne bovina no segundo supermercado").replace(",", "."))
+    const mercadoTres = Number (prompt("Informe o preço da carne bovina no terceiro supermercado").replace(",", "."))
+    const mercadoQuatro = Number (prompt("Informe o preço da carne bovina no quarto supermercado").replace(",", "."))
 
 
     //PROCESSAMENTO
+    const media =Math.ceil(mercadoUm+mercadoDois+mercadoTres+mercadoQuatro)/4
 
 
     //SAÍDA
+    alert(`A média de preço da carne nos quatros supermercados é de R$ ${media.toFixed(2).replace(".", ",")}`)
 
 </script>

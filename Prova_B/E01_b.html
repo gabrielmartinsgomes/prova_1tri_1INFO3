@@ -8,11 +8,14 @@
     */
 
     //ENTRADA
-
+const provaUm = Number (prompt ("Informe a nota que o aluno tirou na primeira prova").replace(",", "."));
+const provaDois = Number (prompt ("Informe a nota que o aluno tirou na segunda prova").replace(",", "."));
 
     //PROCESSAMENTO
+    const mediaFinal = ((provaUm*3) + (provaDois*7))/ (3+7);
 
 
     //SAÍDA
+    alert(`A nota final em media ponderada do aluno será ${mediaFinal.toFixed(1).replace(".", ",")} `)
 
 </script>
