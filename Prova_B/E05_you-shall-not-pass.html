@@ -8,11 +8,18 @@
     */
 
     //ENTRADA
+    const moto = Number(prompt("Informe quantos Km a mtocicleta consegue percorrer com 1L de combustivel"))
+    const quilometragem = Number (prompt("Informe quantos Km a motocicleta ja percorreu"))
 
 
     //PROCESSAMENTO
+    const litros = Math.floor (quilometragem/moto)
+    const revisa = Math.floor (quilometragem/2000)
+    const custoRevisa = Math.ceil (revisa*200)
 
 
     //SAÍDA
+    alert(`Você ja consumiu ${litros}L com a moto.
+    E gastou em revisões da moto R$ ${custoRevisa.toFixed(2).replace(".", ",")}`)
 
 </script>
